@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { User } from './shared/models/user';
+
 @Component({
   moduleId: module.id,
   selector: 'my-app',
@@ -52,13 +54,13 @@ import { Component } from '@angular/core';
   `]
 })
 export class AppComponent {
-  message = 'Hello!';
-  users = [
+  message: string = 'Hello!';
+  users: User[] = [
     { id: 25, name: 'Emil', username: 'emiliogozo' },
     { id: 31, name: 'John', username: 'jdoe' },
     { id: 78, name: 'Jane', username: 'jane.doe' }
   ];
-  activeUser;
+  activeUser: User;
 
   selectUser(user) {
     this.activeUser = user;
