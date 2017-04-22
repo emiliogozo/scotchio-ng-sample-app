@@ -1,3 +1,3 @@
-# ng-start
+# ng-sample-app
 
-Starter files for Angular project
+Sample Angular app
